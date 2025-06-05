@@ -12,7 +12,10 @@ interface Book {
 
 // const MyButton = (props:{text:string}) => {} is ok
 const MyButton: React.FC<MyButtonProps> = (props) => {
+
+  
   const context = useCounter()
+  
   let [value, setValue] = useState<number>(1)
   let [value1, setValue1] = useState<number>(1)
 
